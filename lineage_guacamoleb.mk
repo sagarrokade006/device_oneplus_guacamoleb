@@ -34,10 +34,11 @@ TARGET_SCREEN_HEIGHT := 2240
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
+BUILD_FINGERPRINT := "OnePlus/OnePlus7_EEA/OnePlus7:11/RKQ1.201022.002/2206171325:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus7 \
-    TARGET_NAME=OnePlus7
-
+    TARGET_NAME=OnePlus7 \
+    PRIVATE_BUILD_DESC="OnePlus7-user 11   release-keys"
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 # Matrixx
