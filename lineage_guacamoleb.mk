@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
 # Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_guacamoleb
+PRODUCT_NAME := lineage_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1905
@@ -39,3 +39,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_NAME=OnePlus7
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Matrixx
+MATRIXX_MAINTAINER := sagarrokade006
+MATRIXX_CHIPSET := SM8350
+MATRIXX_BATTERY := 3700mAh
+MATRIXX_DISPLAY := 1080x2400
+WITH_GMS := true
